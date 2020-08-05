@@ -1,5 +1,7 @@
 # Blog / Article Template
 
+This is a template for creating blog posts, or turning papers into project pages which can be more engaging and attractive than reading the pdf off of arxiv. 
+
 ## Overview
 
 ### If all you want to do is view the page locally
