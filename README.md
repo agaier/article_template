@@ -45,41 +45,40 @@ Note that to update the html files (the header, etc.) you will have to run `./bi
 --- 
 ## Checklist when using this Template
 
-1) Update title and authors (`draft_header.html`: l186)
-2) Page Title, cover image, and caption (`draft_header.html`: l171, l175)
-3) Replace text (`draft.md`)
-  a) upload all images and videos to asset folders 
-  b) place all references in `draft_bib.html`
-  c) javascript demo functions defined in `lib/controller.js`
-4) Replace Appendix (`draft_appendix.md`)
-  a) Acknowledgements 
-  b) Feedback link (can use the current repo's issues)
-  c) Citation for article
-  d) Code link
-  e) License of text/images
-  f) Supplementary Materials
-5) Web
-  a) Title of page (`draft_header.html`: l171)
-  a) Twitter image and card data (`draft_header.html`: l146)
-  b) SEO description (`draft_header.html`: l146)
-  c) (optional) Google analytics (`draft_header.html`: l134)
-6) Final touches
-  a) Update date (`draft_header.html`: l204)
-  b) Pdf link if applicable, (`draft_header.html`: l209)
+1. Update title and authors (`draft_header.html`: l186)
+2. Page Title, cover image, and caption (`draft_header.html`: l171, l175)
+3. Replace text (`draft.md`)
+   1. upload all images and videos to `assets` folder   
+   2. place all references in `draft_bib.html`
+   3. javascript demo functions defined in `lib/controller.js`
+4. Replace Appendix (`draft_appendix.md`)
+   1. Acknowledgements
+   2. Feedback link (can use the current repo's issues)
+   3. Citation for article 
+   4. Code link 
+   5. License of text/images 
+   6. Supplementary Materials
+5. Web
+   1. Title of page (`draft_header.html`: l171)
+   1. Twitter image and card data (`draft_header.html`: l146)
+   1. SEO description (`draft_header.html`: l146)
+   1. (optional) Google analytics (`draft_header.html`: l134)
+6. Final touches
+   1. Update date (`draft_header.html`: l204)
+   1. Pdf link if applicable, (`draft_header.html`: l209)
 
 ---
 ## Syntax Reference
 
-math:
+**math:**
   * normal latex syntax can be used (e.g. $\mathcal{U}(-2,2)$), though I haven't seen how far this can be pushed
 
-citatation: 
+**citation:**
   * cite in draft.md with: `<dt-cite key="some_paper"></dt-cite>`
   * place bibtex in draft_bib.html
 
-images: 
-[markdown]
-`
+**images:**
+```markdown
   <div style="text-align: center;">
     <br/>
     <img class="b-lazy" src="assets/img/MY_IMG.png" style="width: 75%;"/>
@@ -90,12 +89,10 @@ images:
       This is the caption of the figure.
     </figcaption>
   </div>
-`
-[end]
+```
 
-videos:
-[markdown]
-`
+**videos:**
+```markdown
   <div style="text-align: center;">
     <video class="b-lazy" src="assets/mp4/MY_VID.mp4" type="video/mp4" autoplay muted playsinline loop style="width:50%;"></video>
     <br/>
@@ -105,14 +102,12 @@ videos:
       This is the caption of the figure.
     </figcaption>
   </div>
-`
-[end]
+```
 
-javascript:
+**javascript:**
 Live demos are in javascript, inserted in the draft.md file as divs.
 
-[markdown]
-`
+```markdown
   <div style="text-align: center;">
   <br/>
   <div id="MY_DEMO" class="unselectable" style="text-align: center;"></div>
@@ -122,13 +117,11 @@ Live demos are in javascript, inserted in the draft.md file as divs.
     This is the caption for the interactive demo.
   </figcaption>
   </div>
-`
-[end]
+```
 
 With the javascript functions defined `lib/controller.js`, e.g.
 
-[javascript]
-`
+```javascript
 var demo_0008_settings = {
   divName: 'MY_DEMO',
   smallMode: true,
@@ -144,5 +137,4 @@ var demo_0008_settings = {
   displayTitle: true,
 };
 var MY_DEMO = new p5(cartpole_demo(MY_DEMO_settings), 'MY_DEMO');
-`
-[end]
+```
