@@ -74,8 +74,8 @@ Note that to update the html files (the header, etc.) you will have to run `./bi
   * normal latex syntax can be used (e.g. $\mathcal{U}(-2,2)$), though I haven't seen how far this can be pushed
 
 **citation:**
-  * cite in draft.md with: `<dt-cite key="some_paper"></dt-cite>`
-  * place bibtex in draft_bib.html
+  * cite in `draft.md` with: `<dt-cite key="some_paper"></dt-cite>`
+  * place bibtex in `draft_bib.html`
 
 **images:**
 ```markdown
@@ -105,7 +105,7 @@ Note that to update the html files (the header, etc.) you will have to run `./bi
 ```
 
 **javascript:**
-Live demos are in javascript, inserted in the draft.md file as divs.
+Live demos are in javascript, inserted in the `draft.md` file as divs.
 
 ```markdown
   <div style="text-align: center;">
