@@ -1,6 +1,6 @@
 # Blog / Article Template
 
-This is a template for creating blog posts, or turning papers into project pages which can be more engaging and attractive than reading the pdf off of arxiv. 
+This is a template for creating blog posts, or turning papers into engaging and attractive project pages. It makes use of the distill template and [github pages](https://pages.github.com/). An example of what this template looks like can be found [here](https://weightagnostic.github.io/).
 
 ## Overview
 
